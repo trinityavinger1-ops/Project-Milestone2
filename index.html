@@ -1,1 +1,31 @@
 <!DOCTYPE html> 
+<html lang= "en">
+  <head>
+    <meta charset = "UTF-8">
+    <meta name ="Viewport"
+      content = " width=device-width, initial-scale= 1.0">
+    <title> Quiz </title>
+  </head>
+  <body>
+    <h2> Self-Assessment Quiz</h2>
+    <form id="quizForm">
+      <h4>1. Fill in the blank</h4>
+      <p> What does HTML stand for? _________________ </p>
+      <input type = "text" id= "q1">
+      <br><br> 
+      
+      <h4>2. Multiple Choice </h4>
+      <p>What year was the HTML prototype and web browwser created? </p>
+      <input type= "radio" name= "q2" value= "1990"> 1990 <br>
+      <input type= "radio" name = "q2" value= "1993"> 1993 <br>
+      <input type= "radio" name = "q2" value= "1997"> 1997 <br>
+      <input type= "radio" name = "q2" value= "2000"> 2000 <br>
+      <br>
+      <button type= "button" onclick= "submitQuiz()"> Submit Quiz </button>
+    </form>
+    <div id ="results">
+    </div>
+    <script src="quiz.js">
+    </script>
+  </body>
+</html>
